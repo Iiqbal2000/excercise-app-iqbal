@@ -15,7 +15,7 @@ mongoose.connection
     console.warn('Error : ', error);
   })
     
-  // runs before each test
+  // runs after test
 after((done) => {
   mongoose.connection.collections.usertrackers.drop(() => {
     done()
