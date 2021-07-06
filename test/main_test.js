@@ -64,3 +64,4 @@ it('It should return response body equal request body', async () => {
   
 }).timeout(10000)
 
+it('It should return the user response object with a log array of all exercises')

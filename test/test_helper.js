@@ -16,7 +16,7 @@ mongoose.connection
   })
     
   // runs before each test
-before((done) => {
+after((done) => {
   mongoose.connection.collections.usertrackers.drop(() => {
     done()
   })
